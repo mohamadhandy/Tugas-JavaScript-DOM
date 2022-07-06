@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas JS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <form onsubmit="getData(); return false;">
+    <div class="row">
+      <div class="col s12">
+        Name <span class="red-text">*</span>
+        <div class="input-field inline">
+          <input id="name" class="input-field-val" name="name" type="text" placeholder="name"/>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col s12">
+        Email <span class="red-text">*</span>
+        <div class="input-field inline">
+          <input id="email" class="input-field-val" name="email" placeholder="email"/>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        Address <span class="red-text">*</span>
+        <textarea name="address" id="address" class="materialize-textarea input-field-val" placeholder="address"></textarea>
+        <label for="address"></label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        No Telp <span class="red-text">*</span>
+        <div class="input-field inline">
+          <input id="no-telp" type="text" name="no telp" class="input-field-val" placeholder="no telp" />
+          <label for="email_inline"></label>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <button id="submit-button" class="waves-effect waves-light btn" type="submit">Submit</button>
+    </div>
+    <div class="row">
+      <p>Warna favorit:</p>
+      <label>
+        <input type="checkbox" value="blue" class="checkbox-color" />
+        <span>blue</span>
+      </label>
+      <label>
+        <input type="checkbox" value="red" class="checkbox-color" />
+        <span>red</span>
+      </label>
+      <label>
+        <input type="checkbox" value="green" class="checkbox-color" />
+        <span>green</span>
+      </label>
+      <label>
+        <input type="checkbox" value="orange" class="checkbox-color" />
+        <span>orange</span>
+      </label>
+      <label>
+        <input type="checkbox" value="purple" class="checkbox-color" />
+        <span>purple</span>
+      </label>
+    </div>
+  </form>
+
+  <div class="row">
+    <div class="col s6">
+      <table border="1" id="table-data" class="responsive-table">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Alamat</th>
+          <th>No telp</th>
+          <th>Warna favorit</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
